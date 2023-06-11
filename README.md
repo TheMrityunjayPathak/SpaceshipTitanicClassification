@@ -1,1 +1,142 @@
-# SpaceshipTitanicClassification
+**Spaceship Titanic Classification**
+
+Hello Everyone, 👋 
+
+Here is My Classification Project based on Predicting which Passenger is transported to an Alternate Dimension.
+
+------------------------------------
+
+🔸 **Dataset**
+
+I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in Competition Menu.
+
+📍 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
+
+-------------------------------------
+
+🌐 **Setting up the Enviroment**
+
+Jupyter Notebook is required for this project and you can install and set it up in the terminal.
+
+- Install the Notebook - `pip install notebook`
+
+- Run the Notebook - `jupyter notebook`
+
+------------------------------------------
+
+🗃️ **Libraries required for the Project**
+
+🔸 **NumPy**
+
+- Go to Terminal and run this code - `pip install numpy`
+
+- Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
+
+🔸 **Pandas**
+
+- Go to Terminal and run this code - `pip install pandas`
+
+- Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
+
+🔸 **Matplotlib**
+
+- Go to Terminal and run this code - `pip install matplotlib`
+
+- Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
+
+🔸 **Seaborn**
+
+- Go to Terminal and run this code - `pip install seaborn`
+
+- Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
+
+🔸 **Sklearn**
+
+- Go to Terminal and run this code - `pip install sklearn`
+
+- Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
+
+-------------------------------------------
+
+## Getting Started
+
+- Clone the repository to your local machine using the following command :
+```
+git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.git
+```
+--------------------------------------------
+
+📝 **Steps involved in the Project**
+
+1️⃣ **Data Cleaning**
+
+- First of all I dropped the Text Column and Some Unnecessary Column from our Dataset i.e Name, PassengerId, Cabin.
+
+- Then I found NaN Values in Age Column which I filled with Median of Age by fillna(df["Age"].median()) Method.
+
+- Then I count the Maximum Occuring Element from VIP, Destination, HomePlanet, CryoSleep Column and used them to fill the NaN Values present in those Columns.
+
+- After that I converted Transported Column to int DataType.
+
+- Then I dropped all NaN Values from RoomService, FoodCourt, ShoppingMall, Spa, VRDeck Column.
+
+2️⃣ **Data Visualization**
+
+- I used CountPlot to visualize all Categorical Variables from the Dataset by using sns.countplot() Method.
+
+- Number of Passengers Transported vs Not Transpoprted to their Planets
+
+![__results___69_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/18b89805-1522-4d61-84e1-ce4c783c0267)
+
+- Number of Passengers with their respective HomePlanet
+
+![__results___71_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/537abe8d-2021-4744-8e8a-0eba692664a6)
+
+- Number of Passengers opted for VIP Service
+
+![__results___73_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/f1108956-32d3-4d4d-b6e6-87b23e463c95)
+
+- Number of Passengers with their respective Destinations
+
+![__results___75_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/23e3a915-48d5-427f-b64e-b9cc47045030)
+
+
+3️⃣ **Dummy Variable**
+
+- I created Dummy Variable for HomePlanet and Destination Column and stored them into their individual DataFrame and then concatenated them into our Orignal DataFrame.
+
+- Then I dropped the HomePlanet and Destination Column as it is of no use Now.
+
+4️⃣ **Data Standardization**
+
+- I used StandardScaler to scale the Data to a Particular Interval of Values instead of Random Values.
+
+- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck Column are the Columns which get Standardized and then I Stored them into ScaledValues DataFrame.
+
+- Then I dropped the Unscaled Columns and concatenated the Scaled Column DataFrame into our Orignal DataFrame.
+
+5️⃣ **Imbalance Data**
+
+- After that I found that VIP Column is highly imbalance which can reduce our Model Accuracy.
+
+- So I divided our DataFrame into 2 Parts based on People who opted for VIP Service or Not.
+
+- Then I upscaled the VIP People to Non VIP People as Number of VIP People is much lesser than Number of Non VIP People.
+
+- Then I used sns.countplot(x="VIP",data=df4) to verify that both the Values are evenly Balanced.
+
+6️⃣ **Model Creation**
+
+- Firstly I have definied Dependent and Independent Variables for our Traning and Testing.
+
+- Then I splitted data into Traning and Testing by using Train Test Split.
+
+- Then I fit the Model with X_train and y_train on Support Vector Machine and Random Forest Classifier and checked the Score.
+
+- After that I used KFold Cross Validation for further improving the Accuracy of our Model.
+
+- So I cheked Mean Cross_Val_Score of both SVM and Random Forest Classifier for Best Score
+
+--------------------------------
+
+📍 **Link to Notebook :** [Spaceship Titanic Classification](https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification)
