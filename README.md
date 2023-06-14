@@ -145,7 +145,15 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 ## Conclusion
 
+- Throughout the Project, We employed SVM (Support Vector Machines), Random Forest, and Cross-Validation to build our Predictive Models.
 
+- After Extensive Data Preprocessing, including handling missing values, feature engineering, data standardization and handling imbalance data we trained the models on the training dataset.
+
+- These Models effectively captured patterns and relationships within the data, allowing us to predict whether a passenger was transported to an alternate dimension during the Spaceship Titanic's collision with the spacetime anomaly.
+
+- Overall, with a score of 0.88, our machine learning models demonstrated strong predictive capabilities in determining whether a passenger was transported to an alternate dimension during the Spaceship Titanic's collision with the spacetime anomaly.
+
+- The project showcased the effectiveness of SVM, Random Forest, and cross-validation techniques in solving classification problems.
 
 ## Link to the Notebook
 [Spaceship Titanic Classification](https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification)
