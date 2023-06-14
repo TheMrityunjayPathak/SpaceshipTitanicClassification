@@ -1,20 +1,31 @@
-**Spaceship Titanic Classification**
+## Spaceship Titanic Classification
 
-Hello Everyone, 👋 
+Hello Everyone,
 
 Here is My Classification Project based on Predicting which Passenger is transported to an Alternate Dimension.
 
-------------------------------------
-
-🔸 **Dataset**
+## Dataset
 
 I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in Competition Menu.
 
-📍 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
+**Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
 
--------------------------------------
+## Problem Statement
 
-🌐 **Setting up the Enviroment**
+- The objective of this Project is to predict whether a passenger was transported to an alternate dimension during the Spaceship Titanic's collision with the spacetime anomaly.
+
+- To make these predictions, we have a set of personal records recovered from the ship's damaged computer system.
+
+## Table of Contents
+
+- [Setting up the Enviroment](#setting-up-the-enviroment)
+- [Libraries required for the Project](#libraries-required-for-the-project)
+- [Getting started with Repository](#getting-started)
+- [Steps involved in the Project](#steps-involved-in-the-project)
+- [Conclusion](#conclusion)
+- [Link to the Notebook](#link-to-the-notebook)
+
+## Setting up the Enviroment
 
 Jupyter Notebook is required for this project and you can install and set it up in the terminal.
 
@@ -22,41 +33,37 @@ Jupyter Notebook is required for this project and you can install and set it up 
 
 - Run the Notebook - `jupyter notebook`
 
-------------------------------------------
+## Libraries required for the Project
 
-🗃️ **Libraries required for the Project**
-
-🔸 **NumPy**
+**NumPy**
 
 - Go to Terminal and run this code - `pip install numpy`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
 
-🔸 **Pandas**
+**Pandas**
 
 - Go to Terminal and run this code - `pip install pandas`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
 
-🔸 **Matplotlib**
+**Matplotlib**
 
 - Go to Terminal and run this code - `pip install matplotlib`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
 
-🔸 **Seaborn**
+**Seaborn**
 
 - Go to Terminal and run this code - `pip install seaborn`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
 
-🔸 **Sklearn**
+**Sklearn**
 
 - Go to Terminal and run this code - `pip install sklearn`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
-
--------------------------------------------
 
 ## Getting Started
 
@@ -64,11 +71,10 @@ Jupyter Notebook is required for this project and you can install and set it up 
 ```
 git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.git
 ```
---------------------------------------------
 
-📝 **Steps involved in the Project**
+## Steps involved in the Project
 
-1️⃣ **Data Cleaning**
+**Data Cleaning**
 
 - First of all I dropped the Text Column and Some Unnecessary Column from our Dataset i.e Name, PassengerId, Cabin.
 
@@ -80,7 +86,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Then I dropped all NaN Values from RoomService, FoodCourt, ShoppingMall, Spa, VRDeck Column.
 
-2️⃣ **Data Visualization**
+**Data Visualization**
 
 - I used CountPlot to visualize all Categorical Variables from the Dataset by using sns.countplot() Method.
 
@@ -101,13 +107,13 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 ![__results___75_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/23e3a915-48d5-427f-b64e-b9cc47045030)
 
 
-3️⃣ **Dummy Variable**
+**Dummy Variable**
 
 - I created Dummy Variable for HomePlanet and Destination Column and stored them into their individual DataFrame and then concatenated them into our Orignal DataFrame.
 
-- Then I dropped the HomePlanet and Destination Column as it is of no use Now.
+- Then I dropped the HomePlanet and Destination Column as it is of no use now.
 
-4️⃣ **Data Standardization**
+**Data Standardization**
 
 - I used StandardScaler to scale the Data to a Particular Interval of Values instead of Random Values.
 
@@ -115,7 +121,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Then I dropped the Unscaled Columns and concatenated the Scaled Column DataFrame into our Orignal DataFrame.
 
-5️⃣ **Imbalance Data**
+**Imbalance Data**
 
 - After that I found that VIP Column is highly imbalance which can reduce our Model Accuracy.
 
@@ -125,7 +131,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Then I used sns.countplot(x="VIP",data=df4) to verify that both the Values are evenly Balanced.
 
-6️⃣ **Model Creation**
+**Model Creation**
 
 - Firstly I have definied Dependent and Independent Variables for our Traning and Testing.
 
@@ -137,6 +143,9 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - So I cheked Mean Cross_Val_Score of both SVM and Random Forest Classifier for Best Score
 
---------------------------------
+## Conclusion
 
-📍 **Link to Notebook :** [Spaceship Titanic Classification](https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification)
+
+
+## Link to the Notebook
+[Spaceship Titanic Classification](https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification)
