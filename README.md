@@ -151,3 +151,6 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 ## Link to the Notebook
 [Spaceship Titanic Classification](https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification)
+
+|[Scroll to Top ⬆️](#spaceship-titanic-classification)|
+|:---:|
