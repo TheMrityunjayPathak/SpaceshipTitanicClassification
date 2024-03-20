@@ -231,15 +231,15 @@ def web_app():
         final_df[subset_cols] = scaled_values
 
         #Standardized Selection Box
-        room_service = st.selectbox(label="Select the Room Service Amount",options=final_df[subset_cols[0]].round(4),placeholder="Select the Amount...",index=None)
+        room_service = st.selectbox(label="Select the Room Service Amount",options=final_df[subset_cols[0]].round(4),placeholder="Select the Amount...",index=None,help="These inputs are Standardized by using StandardScaler")
 
-        food_court = st.selectbox(label="Select the Food Cort Amount Spend",options=final_df[subset_cols[1]].round(4),placeholder="Select the Amount...",index=None)
+        food_court = st.selectbox(label="Select the Food Cort Amount Spend",options=final_df[subset_cols[1]].round(4),placeholder="Select the Amount...",index=None,help="These inputs are Standardized by using StandardScaler")
 
-        spa = st.selectbox(label="Select the Spa Service Amount Spend",options=final_df[subset_cols[2]].round(4),placeholder="Select the Amount...",index=None)
+        spa = st.selectbox(label="Select the Spa Service Amount Spend",options=final_df[subset_cols[2]].round(4),placeholder="Select the Amount...",index=None,help="These inputs are Standardized by using StandardScaler")
 
-        vr_deck = st.selectbox(label="Select the VRDeck Amount Spend",options=final_df[subset_cols[3]].round(4),placeholder="Select the Amount...",index=None)
+        vr_deck = st.selectbox(label="Select the VRDeck Amount Spend",options=final_df[subset_cols[3]].round(4),placeholder="Select the Amount...",index=None,help="These inputs are Standardized by using StandardScaler")
 
-        shopping_mall = st.selectbox(label="Select the Shopping Amount Spend",options=final_df[subset_cols[4]].round(4),placeholder="Select the Amount...",index=None)
+        shopping_mall = st.selectbox(label="Select the Shopping Amount Spend",options=final_df[subset_cols[4]].round(4),placeholder="Select the Amount...",index=None,help="These inputs are Standardized by using StandardScaler")
 
     #Prediction Button
     with col3:
