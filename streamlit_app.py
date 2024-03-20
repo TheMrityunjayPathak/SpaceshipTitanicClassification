@@ -16,11 +16,11 @@ df_is_vip_upsample = resample(df_is_vip, n_samples=len(df_not_vip), random_state
 final_df = pd.concat([df_not_vip,df_is_vip_upsample])
 
 #Loading Models in App
-with open('model_rf.pkl', 'rb') as f:
-    rf = pickle.load(f)
-
 with open('model_svm.pkl', 'rb') as f:
     svm = pickle.load(f)
+
+with open('model_rf.pkl', 'rb') as f:
+    rf = pickle.load(f)
 
 #Setting Page Configuration
 st.set_page_config(page_title="Spaceship Titanic Classification",page_icon="🛰️",layout="centered")
@@ -283,8 +283,8 @@ def web_app():
             if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None, models is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
             else:
-                prediction_svm = svm.predict(df3)
-                if prediction_svm == 1:
+                prediction = svm.predict(df3)
+                if prediction == 1:
                     st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
                 else:
                     st.error(f"Passenger has not been Transported to an Alternate Dimension", icon="❌")   
@@ -293,8 +293,8 @@ def web_app():
             if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None, models is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
             else:
-                prediction_rf = rf.predict(df3)
-                if prediction_rf == 1:
+                prediction = rf.predict(df3)
+                if prediction == 1:
                     st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
                 else:
                     st.error(f"Passenger has not been Transported to an Alternate Dimension", icon="❌")  
@@ -310,7 +310,7 @@ pages = st.sidebar.selectbox(label="",options=["Home Page","Web Application"],in
 
 if pages == "Home Page":
     intro_page()
-if pages == "Web Application":
+else:
     web_app()
 
 #Contributions Section
