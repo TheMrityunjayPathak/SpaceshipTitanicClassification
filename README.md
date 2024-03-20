@@ -16,6 +16,20 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in
 
 - To make these predictions, we have a set of personal records recovered from the ship's damaged computer system.
 
+## Streamlit Web App
+
+- For my Spaceship Titanic Classification Project, I have created a Streamlit Web App for Finding out If a Passenger was Transported to an Alternate Dimensionin or not.
+
+- This Web App allows you to classify the Passengers based on some Features and Criteria and Predict Whether They were transported or not.
+
+- This Web App is Multi-Pages, means you can navigate to different pages through dropdown menu in Sidebar.
+
+  - First Page is <strong>Home Page</strong>, which contains all information about the Problem and Dataset Used.
+ 
+  - Second Page is <strong>Web Application Page</strong>, which is an interactive application used to classify Passengers. 
+
+**Link to the Web App :** [Spaceship Titanic App](https://spaceship-titanic-classification.streamlit.app/)
+
 ## Table of Contents
 
 - [Setting up the Enviroment](#setting-up-the-enviroment)
