@@ -283,7 +283,7 @@ def web_app():
             if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None, models is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
             else:
-                prediction = model_svm.predict(df3)
+                prediction = model_svm.predict(df3)[0]
                 if prediction == 1:
                     st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
                 else:
@@ -293,7 +293,7 @@ def web_app():
             if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None, models is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
             else:
-                prediction = model_rf.predict(df3)
+                prediction = model_rf.predict(df3)[0]
                 if prediction == 1:
                     st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
                 else:
