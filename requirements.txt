@@ -2,4 +2,3 @@ pip
 streamlit
 pandas
 scikit-learn
-intro_page
