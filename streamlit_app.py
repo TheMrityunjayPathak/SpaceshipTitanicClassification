@@ -95,7 +95,7 @@ def intro_page():
 
         st.markdown('<b>→ The planet the passenger departed from, typically their planet of permanent residence.<b>',unsafe_allow_html=True)
 
-        st.write(f"Different Home Planets are {df["HomePlanet"].unique()}.")
+        st.write(f"Different Home Planets are {df['HomePlanet'].unique()}.")
 
     #Cryo Sleep Section
     st.markdown("<div style='background-color:#48C9B0; padding:10px; border-radius:25px; text-align:center;'><b>CryoSleep</b></div>",unsafe_allow_html=True)
@@ -106,7 +106,7 @@ def intro_page():
 
         st.markdown('<b>→ Indicates whether the passenger elected to be put into cryo capsule for the duration of the voyage.</b>',unsafe_allow_html=True)
 
-        st.write(f"Different values for CryoSleep are {df["CryoSleep"].unique()}.")
+        st.write(f"Different values for CryoSleep are {df['CryoSleep'].unique()}.")
 
         st.write(f"0 = No    1 = Yes")
 
@@ -119,7 +119,7 @@ def intro_page():
 
         st.markdown('<b>→ The planet the passenger will be debarking to.</b>',unsafe_allow_html=True)
 
-        st.write(f"Different Destination Planets are {df["Destination"].unique()}.")
+        st.write(f"Different Destination Planets are {df['Destination'].unique()}.")
 
     #VIP Section
     st.markdown("<div style='background-color:#48C9B0; padding:10px; border-radius:25px; text-align:center;'><b>VIP</b></div>",unsafe_allow_html=True)
@@ -130,7 +130,7 @@ def intro_page():
 
         st.markdown('<b>→ Whether the passenger has paid for special VIP service during the voyage.</b>',unsafe_allow_html=True)
 
-        st.write(f"Different values for VIP are {df["VIP"].unique()}.")
+        st.write(f"Different values for VIP are {df['VIP'].unique()}.")
 
         st.write(f"0 = No    1 = Yes")
 
@@ -143,15 +143,15 @@ def intro_page():
 
         st.markdown('<b>→ Amount the passenger has billed at each of the Spaceship Titanics many luxury amenities.</b>',unsafe_allow_html=True)
 
-        st.write(f"Room Service Amount is between {round(df["RoomService"].min())} to {round(df["RoomService"].max())}.")
+        st.write(f"Room Service Amount is between {round(df['RoomService'].min())} to {round(df['RoomService'].max())}.")
 
-        st.write(f"Food Court Amount is between {round(df["FoodCourt"].min())} to {round(df["FoodCourt"].max())}.")
+        st.write(f"Food Court Amount is between {round(df['FoodCourt'].min())} to {round(df['FoodCourt'].max())}.")
 
-        st.write(f"Shopping Mall Amount is between {round(df["ShoppingMall"].min())} to {round(df["ShoppingMall"].max())}.")
+        st.write(f"Shopping Mall Amount is between {round(df['ShoppingMall'].min())} to {round(df['ShoppingMall'].max())}.")
 
-        st.write(f"Spa Amount is between {round(df["Spa"].min())} to {round(df["Spa"].max())}.")
+        st.write(f"Spa Amount is between {round(df['Spa'].min())} to {round(df['Spa'].max())}.")
 
-        st.write(f"VRDeck Amount is between {round(df["VRDeck"].min())} to {round(df["VRDeck"].max())}.")
+        st.write(f"VRDeck Amount is between {round(df['VRDeck'].min())} to {round(df['VRDeck'].max())}.")
 
     #Age Section
     st.markdown("<div style='background-color:#48C9B0; padding:10px; border-radius:25px; text-align:center;'><b>Age</b></div>",unsafe_allow_html=True)
@@ -162,7 +162,7 @@ def intro_page():
 
         st.markdown('<b>→ The age of the passenger.</b>',unsafe_allow_html=True)
 
-        st.write(f"Age of Passengers is between {round(df["Age"].min())} to {round(df["Age"].max())}.")
+        st.write(f"Age of Passengers is between {round(df['Age'].min())} to {round(df['Age'].max())}.")
 
     #Transported Section
     st.markdown("<div style='background-color:#48C9B0; padding:10px; border-radius:25px; text-align:center;'><b>Transported</b></div>",unsafe_allow_html=True)
@@ -173,7 +173,7 @@ def intro_page():
 
         st.markdown('<b>→ Whether the passenger was transported to another dimension or not.</b>',unsafe_allow_html=True)
 
-        st.write(f"Different values for Transported are {df["Transported"].unique()}.")
+        st.write(f"Different values for Transported are {df['Transported'].unique()}.")
 
         st.write(f"0 = No    1 = Yes")
 
