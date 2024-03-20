@@ -280,20 +280,20 @@ def web_app():
     #Prediction
     if models == "Support Vector Machine":
         if pred:
-            if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None, models is None]):
+            if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
             else:
-                prediction = model_svm.predict(df3)[0]
+                prediction = model_svm.predict(df3)
                 if prediction == 1:
                     st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
                 else:
                     st.error(f"Passenger has not been Transported to an Alternate Dimension", icon="❌")   
     else:
         if pred:
-            if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None, models is None]):
+            if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
             else:
-                prediction = model_rf.predict(df3)[0]
+                prediction = model_rf.predict(df3)
                 if prediction == 1:
                     st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
                 else:
