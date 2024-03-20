@@ -15,12 +15,9 @@ df_is_vip_upsample = resample(df_is_vip, n_samples=len(df_not_vip), random_state
 
 final_df = pd.concat([df_not_vip,df_is_vip_upsample])
 
-#Loading Models in App
+#Loading Model in App
 with open('model_svm.pkl', 'rb') as f:
     model_svm = pickle.load(f)
-
-with open('model_rf.pkl', 'rb') as f:
-    model_rf = pickle.load(f)
 
 #Setting Page Configuration
 st.set_page_config(page_title="Spaceship Titanic Classification",page_icon="🛰️",layout="centered")
@@ -189,7 +186,8 @@ def web_app():
     #Image
     with col1:
         #Prediction
-        models = st.selectbox(label="Select any Model",placeholder="Choose any Model",options=["Support Vector Machine","Random Forest"],index=None)
+        st.write("")
+        st.write("")
         st.write("")
         st.image("spaceship.png",use_column_width=True)
 
@@ -278,27 +276,16 @@ def web_app():
     df3 = pd.concat([new2_df,df2],axis="columns")
 
     #Prediction
-    if models == "Support Vector Machine":
-        if pred:
-            if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None]):
+    if pred:
+        if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None]):
                 st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
+        else:
+            prediction = model_svm.predict(df3)
+            if prediction == 1:
+                st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
             else:
-                prediction = model_svm.predict(df3)
-                if prediction == 1:
-                    st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
-                else:
-                    st.error(f"Passenger has not been Transported to an Alternate Dimension", icon="❌")   
-    else:
-        if pred:
-            if any([cryo_sleep is None, age is None, vip is None, home_planet is None, destination is None, room_service is None, shopping_mall is None, vr_deck is None, spa is None, food_court is None]):
-                st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
-            else:
-                prediction = model_rf.predict(df3)
-                if prediction == 1:
-                    st.success(f"Passenger has been Transported to an Alternate Dimension", icon="✅")
-                else:
-                    st.error(f"Passenger has not been Transported to an Alternate Dimension", icon="❌")  
-
+                st.error(f"Passenger has not been Transported to an Alternate Dimension", icon="❌")
+                
 #Sidebar Section
 st.sidebar.markdown("<h1 style='text-align:center;'>Hi 👋, Welcome to the App</h1>",unsafe_allow_html=True)    
 
