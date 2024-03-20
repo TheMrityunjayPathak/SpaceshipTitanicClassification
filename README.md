@@ -29,6 +29,7 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in
   - Second Page is <strong>Web Application Page</strong>, which is an interactive application used to classify Passengers. 
 
 **Link to the Web App :** [Spaceship Titanic App](https://spaceship-titanic-classification.streamlit.app/)
+
 ![Screenshot 2024-03-20 141030](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/649c907b-7c72-4bfa-9b78-584acec1cc22)
 
 ## Table of Contents
