@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.utils import resample
 from sklearn.preprocessing import StandardScaler
 import pickle
-from intro_page import intro_page
+import intro_page
 
 #Reading CSV File
 df = pd.read_csv("spaceship_clean.csv")
