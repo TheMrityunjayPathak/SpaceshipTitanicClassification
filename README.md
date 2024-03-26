@@ -12,8 +12,8 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in
 
 ## Problem Statement
 
-- The objective of this Project is to predict whether a passenger was transported to an alternate dimension during the Spaceship Titanic's collision with the spacetime anomaly.
-
+- To predict whether a passenger was transported to an alternate dimension during the Spaceship collision with the spacetime anomaly.
+  
 - To make these predictions, we have a set of personal records recovered from the ship's damaged computer system.
 
 ## Streamlit Web App
