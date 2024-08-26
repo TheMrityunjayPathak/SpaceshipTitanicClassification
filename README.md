@@ -24,9 +24,9 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in
 
 - This Web App is Multi-Pages, means you can navigate to different pages through dropdown menu in Sidebar.
 
-  - First Page is <strong>Home Page</strong>, which contains all information about the Problem Statement and Dataset.
+  - First Page is Home Page, which contains all information about the Problem Statement and Dataset.
  
-  - Second Page is <strong>Web Application Page</strong>, which contains the interactive web application itself used to classify Passengers.
+  - Second Page is Web Application Page, which contains the interactive web application itself used to classify Passengers.
 
 - It also contains a Contribution Section in the Sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP File of the Entire Project.
 
