@@ -159,7 +159,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - After that I used KFold Cross Validation for further improving the Accuracy of our Model.
 
-- So I cheked Mean Cross_Val_Score of both SVM and Random Forest Classifier for Best Score
+- So I cheked Mean Cross_Val_Score of both SVM and Random Forest Classifier for Best Score.
 
 ## Conclusion
 
