@@ -99,12 +99,12 @@ pip install seaborn
 
 - Go to Terminal and run this Code
 ```
-pip install -U scikit-learn
+pip install scikit-learn
 ```
 
 - Go to Jupyter Notebook and run this Code from a Cell
 ```
-!pip install -U scikit-learn
+!pip install scikit-learn
 ```
 
 ## Getting Started
