@@ -41,7 +41,6 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in
 - [Getting started with Repository](#getting-started)
 - [Steps involved in the Project](#steps-involved-in-the-project)
 - [Conclusion](#conclusion)
-- [Link to the Notebook](#link-to-the-notebook)
 
 ## Setting up the Enviroment
 
@@ -191,8 +190,8 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Validated the Random Forest Model with a mean cross_val_score of 88% and demonstrated its superior robustness compared to SVM with a mean cross_val_score of 81%.
 
-## Link to the Notebook
-[Spaceship Titanic Classification](https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification)
+<div align='right'>
+  
+**[`^        Scroll to Top       ^`](#spaceship-titanic-classification)**
 
-|[Scroll to Top ⬆️](#spaceship-titanic-classification)|
-|:---:|
+</div>
