@@ -6,13 +6,13 @@ Here is my classification project based on predicting whether a passenger is tra
 
 ## Dataset
 
-I used spaceship titanic dataset which is uploaded by Kaggle on their website in competition menu.
+I used Spaceship Titanic Dataset which is uploaded by Kaggle on their website in competition menu.
 
 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
 
 ## Problem Statement
 
-- To predict whether a passenger was transported to an alternate dimension during the Spaceship collision with the spacetime anomaly.
+- To predict whether a passenger was transported to an alternate dimension during the spaceship collision with the spacetime anomaly.
   
 - To make these predictions, we have a set of personal records recovered from the ship's damaged computer system.
 
