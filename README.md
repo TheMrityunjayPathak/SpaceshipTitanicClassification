@@ -18,15 +18,13 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their website in
 
 ## Streamlit Web App
 
-- For my project, I have created a Streamlit Web App for finding out if a passenger was transported to an alternate dimensionin or not.
+- For my project, I have created a streamlit web app for finding out if a passenger was transported to an alternate dimensionin or not.
 
-- This web app allows you to classify the passengers based on some features and criteria and predict whether they were transported or not.
-
-- This web app is Multi-Pages, means you can navigate to different pages through dropdown menu in the sidebar.
+- This web app is multi-pages, means you can navigate to different pages through dropdown menu in the sidebar.
 
   - First Page is home page, which contains the problem statement and information about the dataset.
  
-  - Second Page is web application page, which contains the interactive web application itself used to classify passengers.
+  - Second Page is web application page, which contains the web application itself used to classify passengers.
 
 - It also contains a contribution section in the sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP File of the entire Project.
 
