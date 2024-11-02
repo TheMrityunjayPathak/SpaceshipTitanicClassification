@@ -26,7 +26,7 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their website in
  
   - Second Page is web application page, which contains the web application itself used to classify passengers.
 
-- It also contains a contribution section in the sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP File of the entire Project.
+- It also contains a contribution section in the sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP file of the entire Project.
 
 **Link to the Web App :** [Spaceship Titanic App](https://spaceship-titanic-classification.streamlit.app/)
 
@@ -129,7 +129,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - I used countplot() to visualize all the categorical variables from the dataset by using sns.countplot() method.
 
-- Number of passengers transported vs not transpoprted to their Planets
+- Number of passengers transported vs not transpoprted to their planets
 
 ![__results___69_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/18b89805-1522-4d61-84e1-ce4c783c0267)
 
@@ -174,7 +174,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Firstly I have definied dependent and independent variables for our traning and testing.
 
-- Then I splitted the data into traning and testing set by using train_test_split.
+- Then I split the data into traning and testing set by using train_test_split.
 
 - Then I fit the model with X_train and y_train on support vector machine and random forest classifier and checked the score.
 
