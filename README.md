@@ -6,7 +6,7 @@ Here is my classification project based on predicting whether a passenger is tra
 
 ## Dataset
 
-I used Spaceship Titanic Dataset which is uploaded by Kaggle on their website in competition menu.
+I used spaceship titanic dataset which is uploaded by Kaggle on their website in competition menu.
 
 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
 
