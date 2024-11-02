@@ -186,7 +186,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Implemented random forest classifier and svm model to achieve an accuracy score of 88% and 83% respectively.
 
-- Validated random forest with a mean cross_val_score of 88% and demonstrated its superior robustness compared to svm with a mean cross_val_score of 81%.
+- Validated random forest classifier with a mean cross_val_score of 88% and demonstrated its superior robustness compared to svm with a mean cross_val_score of 81%.
 
 <div align='left'>
   
