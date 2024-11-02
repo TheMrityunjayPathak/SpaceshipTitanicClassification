@@ -1,12 +1,12 @@
-## Spaceship Titanic Classification
+  ## Spaceship Titanic Classification
 
 Hello Everyone,
 
-Here is My Classification Project based on Predicting which Passenger is transported to an Alternate Dimension.
+Here is my classification project based on predicting whether a passenger is transported to an alternate dimension or not.
 
 ## Dataset
 
-I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in Competition Menu.
+I used Spaceship Titanic Dataset which is uploaded by Kaggle on their website in competition menu.
 
 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
 
@@ -18,17 +18,17 @@ I used Spaceship Titanic Dataset which is uploaded by Kaggle on their Website in
 
 ## Streamlit Web App
 
-- For my Spaceship Titanic Classification Project, I have created a Streamlit Web App for Finding out If a Passenger was Transported to an Alternate Dimensionin or not.
+- For my project, I have created a Streamlit Web App for finding out if a passenger was transported to an alternate dimensionin or not.
 
-- This Web App allows you to classify the Passengers based on some Features and Criteria and Predict Whether They were transported or not.
+- This web app allows you to classify the passengers based on some features and criteria and predict whether they were transported or not.
 
-- This Web App is Multi-Pages, means you can navigate to different pages through dropdown menu in Sidebar.
+- This web app is Multi-Pages, means you can navigate to different pages through dropdown menu in the sidebar.
 
-  - First Page is Home Page, which contains all information about the Problem Statement and Dataset.
+  - First Page is home page, which contains the problem statement and information about the dataset.
  
-  - Second Page is Web Application Page, which contains the interactive web application itself used to classify Passengers.
+  - Second Page is web application page, which contains the interactive web application itself used to classify passengers.
 
-- It also contains a Contribution Section in the Sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP File of the Entire Project.
+- It also contains a contribution section in the sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP File of the entire Project.
 
 **Link to the Web App :** [Spaceship Titanic App](https://spaceship-titanic-classification.streamlit.app/)
 
@@ -60,55 +60,55 @@ jupyter notebook
 
 **Pandas**
 
-- Go to Terminal and run this Code
+- Go to the terminal and run this code
 ```
 pip install pandas
 ```
 
-- Go to Jupyter Notebook and run this Code from a Cell
+- Go to Jupyter Notebook and run this code from a cell
 ```
 !pip install pandas
 ```
 
 **Matplotlib**
 
-- Go to Terminal and run this Code
+- Go to the terminal and run this code
 ```
 pip install matplotlib
 ```
 
-- Go to Jupyter Notebook and run this Code from a Cell
+- Go to Jupyter Notebook and run this code from a cell
 ```
 !pip install matplotlib
 ```
 
 **Seaborn**
 
-- Go to Terminal and run this Code
+- Go to the terminal and run this code
 ```
 pip install seaborn
 ```
 
-- Go to Jupyter Notebook and run this Code from a Cell
+- Go to Jupyter Notebook and run this code from a cell
 ```
 !pip install seaborn
 ```
 
 **Sklearn**
 
-- Go to Terminal and run this Code
+- Go to the terminal and run this code
 ```
 pip install scikit-learn
 ```
 
-- Go to Jupyter Notebook and run this Code from a Cell
+- Go to Jupyter Notebook and run this code from a cell
 ```
 !pip install scikit-learn
 ```
 
 ## Getting Started
 
-- Clone the repository to your local machine using the following command :
+- Clone this repository to your local machine by using the following command :
 ```
 git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.git
 ```
@@ -117,80 +117,80 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 **Data Cleaning**
 
-- First of all I dropped the Text Column and Some Unnecessary Column from our Dataset i.e Name, PassengerId, Cabin.
+- First of all I dropped some unnecessary column from our dataset i.e Name, PassengerId, Cabin.
 
-- Then I found NaN Values in Age Column which I filled with Median of Age by fillna(df["Age"].median()) Method.
+- Then I found nan values in age column which I filled with median of age by fillna() method.
 
-- Then I count the Maximum Occuring Element from VIP, Destination, HomePlanet, CryoSleep Column and used them to fill the NaN Values present in those Columns.
+- Then I count the maximum occuring element from VIP, Destination, HomePlanet, CryoSleep column and used them to fill the nan values present in those columns.
 
-- After that I converted Transported Column to int DataType.
+- After that I transformed Transported column to **'int'** DataType.
 
-- Then I dropped all NaN Values from RoomService, FoodCourt, ShoppingMall, Spa, VRDeck Column.
+- Then I dropped all the nan values from RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column.
 
 **Data Visualization**
 
-- I used CountPlot to visualize all Categorical Variables from the Dataset by using sns.countplot() Method.
+- I used countplot() to visualize all the categorical variables from the dataset by using sns.countplot() method.
 
-- Number of Passengers Transported vs Not Transpoprted to their Planets
+- Number of passengers transported vs not transpoprted to their Planets
 
 ![__results___69_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/18b89805-1522-4d61-84e1-ce4c783c0267)
 
-- Number of Passengers with their respective HomePlanet
+- Number of passengers with their respective HomePlanet
 
 ![__results___71_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/537abe8d-2021-4744-8e8a-0eba692664a6)
 
-- Number of Passengers opted for VIP Service
+- Number of passengers opted for VIP service
 
 ![__results___73_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/f1108956-32d3-4d4d-b6e6-87b23e463c95)
 
-- Number of Passengers with their respective Destinations
+- Number of passengers with their respective destinations
 
 ![__results___75_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/23e3a915-48d5-427f-b64e-b9cc47045030)
 
 
 **Dummy Variable**
 
-- I created Dummy Variable for HomePlanet and Destination Column and stored them into their individual DataFrame and then concatenated them into our Orignal DataFrame.
+- I created dummy variables for HomePlanet and Destination column and stored them into their individual DataFrame and then concatenated them into our orignal DataFrame.
 
 - Then I dropped the HomePlanet and Destination Column as it is of no use now.
 
 **Data Standardization**
 
-- I used StandardScaler to scale the Data to a Particular Interval of Values instead of Random Values.
+- I used StandardScaler to scale the data to a particular scale instead of random values.
 
-- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck Column are the Columns which get Standardized and then I Stored them into ScaledValues DataFrame.
+- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column are the columns which get standardized and then I stored them into a DataFrame.
 
-- Then I dropped the Unscaled Columns and concatenated the Scaled Column DataFrame into our Orignal DataFrame.
+- Then I dropped the unscaled columns and concatenated the scaled DataFrame into our orignal DataFrame.
 
 **Imbalance Data**
 
-- After that I found that VIP Column is highly imbalance which can reduce our Model Accuracy.
+- After that I found that VIP column is highly imbalance which can reduce our model accuracy.
 
-- So I divided our DataFrame into 2 Parts based on People who opted for VIP Service or Not.
+- So I divided our DataFrame into 2 parts based on people who opted for VIP service or not.
 
-- Then I upscaled the VIP People to Non VIP People as Number of VIP People is much lesser than Number of Non VIP People.
+- Then I upscaled the VIP people to non VIP people as number of VIP people is much lesser than the number of non VIP people.
 
-- Then I used sns.countplot(x="VIP",data=df4) to verify that both the Values are evenly Balanced.
+- Then I used sns.countplot() to verify that both the values are evenly balanced.
 
 **Model Creation**
 
-- Firstly I have definied Dependent and Independent Variables for our Traning and Testing.
+- Firstly I have definied dependent and independent variables for our traning and testing.
 
-- Then I splitted data into Traning and Testing by using Train Test Split.
+- Then I splitted the data into traning and testing set by using train_test_split.
 
-- Then I fit the Model with X_train and y_train on Support Vector Machine and Random Forest Classifier and checked the Score.
+- Then I fit the model with X_train and y_train on support vector machine and random forest classifier and checked the score.
 
-- After that I used KFold Cross Validation for further improving the Accuracy of our Model.
+- After that I used kfold_cross_validation for further testing the accuracy of our model.
 
-- So I cheked Mean Cross_Val_Score of both SVM and Random Forest Classifier for Best Score.
+- So I cheked mean cross_val_score of both svm and random forest classifier for best score.
 
 ## Conclusion
 
-- Implemented Random Forest and SVM Model to achieve a score of 88% and 83% respectively.
+- Implemented random forest classifier and svm model to achieve an accuracy score of 88% and 83% respectively.
 
-- Validated the Random Forest Model with a mean cross_val_score of 88% and demonstrated its superior robustness compared to SVM with a mean cross_val_score of 81%.
+- Validated random forest with a mean cross_val_score of 88% and demonstrated its superior robustness compared to svm with a mean cross_val_score of 81%.
 
-<div align='right'>
+<div align='left'>
   
 **[`^        Scroll to Top       ^`](#spaceship-titanic-classification)**
 
