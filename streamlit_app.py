@@ -289,7 +289,7 @@ def web_app():
 #Sidebar Section
 st.sidebar.markdown("<h1 style='text-align:center;'>Hi 👋, Welcome to the App</h1>",unsafe_allow_html=True)    
 
-st.sidebar.image("logo.png",caption="Spaceship Titanic Classification",use_column_width=True)
+st.sidebar.image("logo.png",caption="Spaceship Titanic Classification",use_container_width=True)
 
 st.sidebar.markdown("<div style='text-align:center; font-size:x-large;'><b>Select any Page</b></div>",unsafe_allow_html=True) 
 
