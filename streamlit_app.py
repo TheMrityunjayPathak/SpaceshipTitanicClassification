@@ -189,7 +189,7 @@ def web_app():
         st.write("")
         st.write("")
         st.write("")
-        st.image("spaceship.png",use_column_width=True)
+        st.image("spaceship.png",use_container_width=True)
 
     #Feature Inputs
     with col2:
