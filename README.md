@@ -63,21 +63,11 @@ jupyter notebook
 pip install pandas
 ```
 
-- Go to Jupyter Notebook and run this code from a cell
-```
-!pip install pandas
-```
-
 **Matplotlib**
 
 - Go to the terminal and run this code
 ```
 pip install matplotlib
-```
-
-- Go to Jupyter Notebook and run this code from a cell
-```
-!pip install matplotlib
 ```
 
 **Seaborn**
@@ -87,21 +77,11 @@ pip install matplotlib
 pip install seaborn
 ```
 
-- Go to Jupyter Notebook and run this code from a cell
-```
-!pip install seaborn
-```
-
 **Sklearn**
 
 - Go to the terminal and run this code
 ```
 pip install scikit-learn
-```
-
-- Go to Jupyter Notebook and run this code from a cell
-```
-!pip install scikit-learn
 ```
 
 ## Getting Started
