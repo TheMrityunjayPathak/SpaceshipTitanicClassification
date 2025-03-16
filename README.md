@@ -56,6 +56,13 @@ jupyter notebook
 
 ## Libraries required for the Project
 
+**NumPy**
+
+- Go to the terminal and run this code
+```
+pip install numpy
+```
+
 **Pandas**
 
 - Go to the terminal and run this code
