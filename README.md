@@ -102,46 +102,50 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 **Data Cleaning**
 
-- First of all I dropped some unnecessary column from our dataset i.e Name, PassengerId, Cabin.
+- First of all I dropped some unnecessary column from the dataset like Name, PassengerId, Cabin.
 
 - Then I found nan values in age column which I filled with median of age by fillna() method.
 
-- Then I count the maximum occuring element from VIP, Destination, HomePlanet, CryoSleep column and used them to fill the nan values present in those columns.
+- Then I count the maximum occuring category from VIP, Destination, HomePlanet, CryoSleep column.
 
-- After that I transformed Transported column to **'int'** DataType.
+- And used them to fill the nan values present in those columns.
+
+- After that I transformed Transported column to 'int' DataType.
 
 - Then I dropped all the nan values from RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column.
 
 **Data Visualization**
 
-- I used countplot() to visualize all the categorical variables from the dataset by using sns.countplot() method.
+- I used countplot() to visualize all the categorical features from the dataset.
 
-- Number of passengers transported vs not transpoprted to their planets
+- Number of passengers transported vs not transpoprted to their planets.
 
 ![__results___69_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/18b89805-1522-4d61-84e1-ce4c783c0267)
 
-- Number of passengers with their respective HomePlanet
+- Number of passengers with their respective HomePlanet.
 
 ![__results___71_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/537abe8d-2021-4744-8e8a-0eba692664a6)
 
-- Number of passengers opted for VIP service
+- Number of passengers opted for VIP service.
 
 ![__results___73_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/f1108956-32d3-4d4d-b6e6-87b23e463c95)
 
-- Number of passengers with their respective destinations
+- Number of passengers with their respective destinations.
 
 ![__results___75_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/23e3a915-48d5-427f-b64e-b9cc47045030)
 
 
 **Dummy Variable**
 
-- I created dummy variables for HomePlanet and Destination column and stored them into their individual DataFrame and then concatenated them into our orignal DataFrame.
+- I created dummy variables for HomePlanet and Destination column.
 
-- Then I dropped the HomePlanet and Destination Column as it is of no use now.
+- Stored them into their individual DataFrame and then concatenated them into our orignal DataFrame.
+
+- Then I dropped the HomePlanet and Destination column as it is of no use now.
 
 **Data Standardization**
 
-- I used StandardScaler to scale the data to a particular scale instead of random values.
+- I used StandardScaler to scale the data to a particular range instead of random values.
 
 - RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column are the columns which get standardized and then I stored them into a DataFrame.
 
@@ -149,7 +153,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 **Imbalance Data**
 
-- After that I found that VIP column is highly imbalance which can reduce our model accuracy.
+- After that I found that VIP column is highly imbalance which can reduce our model's accuracy.
 
 - So I divided our DataFrame into 2 parts based on people who opted for VIP service or not.
 
@@ -159,21 +163,25 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 **Model Creation**
 
-- Firstly I have definied dependent and independent variables for our traning and testing.
+- I started by defining dependent and independent variables (X, y).
 
-- Then I split the data into traning and testing set by using train_test_split.
+- Then I split the data into traning and testing set by using `train_test_split`.
 
-- Then I fit the model with X_train and y_train on support vector machine and random forest classifier and checked the score.
+- Then I fit the data on support vector machine and random forest classifier and checked the score.
 
-- After that I used kfold_cross_validation for further testing the accuracy of our model.
+- After that I used k-fold_cross_validation for further testing the robustness of our model.
 
-- So I cheked mean cross_val_score of both svm and random forest classifier for best score.
+- So I cheked mean cross_val_score of both svm and random forest classifier to select the best model.
 
 ## Conclusion
 
-- Implemented random forest classifier and svm model to achieve an accuracy score of 88% and 83% respectively.
-
-- Validated random forest classifier with a mean cross_val_score of 88% and demonstrated its superior robustness compared to svm with a mean cross_val_score of 81%.
+- Trained machine learning models for determining if a passenger was transported to an alternate dimension or not.
+  
+- Used Random Forest and SVM to classify the passengers, achieving accuracy of 88% and 83% respectively.
+  
+- Validated the models with k-fold cross-validation, demonstrating RandomForest's superior robustness with a mean cross-validation score of 88% compared to SVM's score of 81%.
+  
+- Lastly, created a web application by using Streamlit.
 
 <div align='left'>
   
