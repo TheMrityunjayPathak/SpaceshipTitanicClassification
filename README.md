@@ -165,7 +165,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - I started by defining dependent and independent variables (X, y).
 
-- Then I split the data into traning and testing set by using `train_test_split`.
+- Then I split the data into traning and testing set by using train_test_split.
 
 - Then I fit the data on support vector machine and random forest classifier and checked the score.
 
@@ -175,7 +175,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 ## Conclusion
 
-- Trained machine learning models for determining if a passenger was transported to an alternate dimension or not.
+- Trained machine learning models for classifying if a passenger was transported to an alternate dimension or not.
   
 - Used Random Forest and SVM to classify the passengers, achieving accuracy of 88% and 83% respectively.
   
