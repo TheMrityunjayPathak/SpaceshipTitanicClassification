@@ -183,7 +183,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Demonstrating RandomForest's superior robustness with a mean cross-val-score of 88% compared to SVM's score of 81%.
   
-- Lastly, created a web application by using Streamlit.
+- Lastly, I created a web application by using Streamlit.
 
 <div align='left'>
   
