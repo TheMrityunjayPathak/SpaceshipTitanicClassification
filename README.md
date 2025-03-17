@@ -139,7 +139,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - I created dummy variables for HomePlanet and Destination column.
 
-- Stored them into their individual DataFrame and then concatenated them into our orignal DataFrame.
+- Stored them into their individual DataFrame and then concatenated them into the orignal DataFrame.
 
 - Then I dropped the HomePlanet and Destination column as it is of no use now.
 
@@ -149,17 +149,17 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column are the columns which get standardized and then I stored them into a DataFrame.
 
-- Then I dropped the unscaled columns and concatenated the scaled DataFrame into our orignal DataFrame.
+- Then I dropped the unscaled columns and concatenated the scaled DataFrame into the orignal DataFrame.
 
 **Imbalance Data**
 
-- After that I found that VIP column is highly imbalance which can reduce our model's accuracy.
+- After that I found that VIP column is highly imbalance which can make the model baised to the majority class.
 
-- So I divided our DataFrame into 2 parts based on people who opted for VIP service or not.
+- So I divided the data into 2 parts based on people who opted for VIP service or not.
 
-- Then I upscaled the VIP people to non VIP people as number of VIP people is much lesser than the number of non VIP people.
+- Then I upscaled the VIP people to non VIP people because number of VIP people is much lesser than the number of non VIP people (VIP <<< Non-VIP).
 
-- Then I used sns.countplot() to verify that both the values are evenly balanced.
+- Then I used sns.countplot() to verify that both the categories are evenly balanced.
 
 **Model Creation**
 
@@ -169,7 +169,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Then I fit the data on support vector machine and random forest classifier and checked the score.
 
-- After that I used k-fold_cross_validation for further testing the robustness of our model.
+- After that I used k-fold_cross_validation for further testing the robustness of the models.
 
 - So I cheked mean cross_val_score of both svm and random forest classifier to select the best model.
 
@@ -177,7 +177,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Trained machine learning models for classifying if a passenger was transported to an alternate dimension or not.
   
-- Used Random Forest and SVM to classify the passengers, achieving accuracy of 88% and 83% respectively.
+- Used Random Forest and SVM to classify the passengers, achieving an accuracy of 88% and 83% respectively.
   
 - Validated the models with k-fold cross-validation.
 
