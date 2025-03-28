@@ -16,7 +16,7 @@ Help save them and change history!
 
 ## Dataset
 
-To help you make these predictions, you're given a set of personal records recovered from the ship's damaged computer system.
+To help make these predictions, we have a set of personal records recovered from the ship's damaged computer system.
 
 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
 
