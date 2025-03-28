@@ -1,8 +1,18 @@
   ## Spaceship Titanic Classification
 
-Hello Everyone,
+Welcome to the year 2912. We've received a transmission from four lightyears away and things aren't looking good.
 
-Here is my classification project based on predicting whether a passenger is transported to an alternate dimension or not.
+The Spaceship Titanic was an interstellar passenger liner launched a month ago.
+
+With almost 13,000 passengers on board, the vessel set out on its maiden voyage transporting emigrants from our solar system to three newly habitable exoplanets orbiting nearby stars.
+
+While rounding Alpha Centauri on its route the Spaceship Titanic collided with a spacetime anomaly hidden within a dust cloud.
+
+Sadly, it met a similar fate as its namesake from 1000 years before. Though the ship stayed intact, almost half of the passengers were transported to an alternate dimension!
+
+To help rescue crews and retrieve the lost passengers, you are challenged to predict which passengers were transported by the anomaly using records recovered from the spaceship’s damaged computer system.
+
+Help save them and change history!
 
 ## Dataset
 
