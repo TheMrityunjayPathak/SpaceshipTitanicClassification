@@ -16,7 +16,7 @@ Help save them and change history!
 
 ## Dataset
 
-I used Spaceship Titanic Dataset which is uploaded by Kaggle on their website in competition menu.
+To help you make these predictions, you're given a set of personal records recovered from the ship's damaged computer system.
 
 **Link to the Dataset :** [Spaceship Titanic Dataset](https://www.kaggle.com/competitions/spaceship-titanic/data?select=train.csv)
 
