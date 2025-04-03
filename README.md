@@ -191,7 +191,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
   
 - Validated the models with k-fold cross-validation.
 
-- Demonstrating Random Forest's superior robustness with a mean cross-val-score of 88% compared to 81% of SVM.
+- Revealing Random Forest's superior robustness with a mean cross-val-score of 88% compared to 81% of SVM.
   
 - Lastly, I created a web application by using Streamlit.
 
