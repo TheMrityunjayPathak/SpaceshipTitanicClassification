@@ -22,9 +22,9 @@ To help make these predictions, we have a set of records recovered from the ship
 
 ## Problem Statement
 
-- To predict whether a passenger was transported to an alternate dimension during the spaceship collision with the spacetime anomaly.
-  
-- To make these predictions, we have a set of personal records recovered from the ship's damaged computer system.
+- To predict whether a passenger was transported to an alternate dimension during the spaceship collision or not.
+
+- To make these predictions, we have a set of records recovered from the ship's damaged computer system.
 
 ## Streamlit Web App
 
