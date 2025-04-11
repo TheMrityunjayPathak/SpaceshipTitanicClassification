@@ -112,21 +112,19 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 **Data Cleaning**
 
-- First of all I dropped some unnecessary column from the dataset like Name, PassengerId, Cabin.
+- First of all I dropped some unnecessary columns from the dataset like name, passengerId, cabin.
 
 - Then I found nan values in age column which I filled with median of age by fillna() method.
 
-- Then I count the maximum occuring category from VIP, Destination, HomePlanet, CryoSleep column.
+- Then I counted the maximum occuring category for vip, destination, homeplanet and cryosleep column.
 
 - And used them to fill the nan values present in those columns.
 
-- After that I transformed Transported column to 'int' DataType.
+- After that I converted transported column to 'int' datatype.
 
-- Then I dropped all the nan values from RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column.
+- And finally I dropped all the nan values from RoomService, FoodCourt, ShoppingMall, Spa and VRDeck column.
 
 **Data Visualization**
-
-- I used countplot() to visualize all the categorical features from the dataset.
 
 - Number of passengers transported vs not transpoprted to their planets.
 
@@ -144,32 +142,33 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 ![__results___75_1](https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/23e3a915-48d5-427f-b64e-b9cc47045030)
 
-
 **Dummy Variable**
 
-- I created dummy variables for HomePlanet and Destination column.
+- I created dummy variables for homeplanet and destination column.
 
-- Stored them into their individual DataFrame and then concatenated them into the orignal DataFrame.
+- And stored them into their individual DataFrame and then concatenated them into the orignal DataFrame.
 
-- Then I dropped the HomePlanet and Destination column as it is of no use now.
+- Finally i dropped the homeplanet and destination column as it is of no use now.
 
 **Data Standardization**
 
-- I used StandardScaler to scale the data to a particular range instead of random values.
+- I used StandardScaler to scale the data into a particular range instead of random values.
 
-- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck column are the columns which get standardized and then I stored them into a DataFrame.
+- RoomService, FoodCourt, ShoppingMall, Spa and VRDeck column needed standardization.
 
 - Then I dropped the unscaled columns and concatenated the scaled DataFrame into the orignal DataFrame.
 
 **Imbalance Data**
 
-- After that I found that VIP column is highly imbalance which can make the model baised to the majority class.
+- After that I found VIP column is highly imbalance, which can make the model baised to the majority class.
 
 - So I divided the data into 2 parts based on people who opted for VIP service or not.
 
-- Then I upscaled the VIP people to non VIP people because number of VIP people is much lesser than the number of non VIP people (VIP <<< Non-VIP).
+- Then I upscaled the VIP people to non VIP people,
 
-- Then I used sns.countplot() to verify that both the categories are evenly balanced.
+- Because number of VIP people is much lesser than the number of non VIP people (VIP <<< Non-VIP).
+
+- And then i used sns.countplot() to verify that both the categories are evenly balanced.
 
 **Model Creation**
 
@@ -179,7 +178,7 @@ git clone https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification.
 
 - Then I fit the data on support vector machine and random forest classifier and checked the score.
 
-- After that I used k-fold_cross_validation for further testing the robustness of the models.
+- After that I used k-fold cross validation for further testing the robustness of the models.
 
 - So I cheked mean cross_val_score of both svm and random forest classifier to select the best model.
 
