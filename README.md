@@ -28,17 +28,17 @@ To help make these predictions, we have a set of records recovered from the ship
 
 ## Streamlit Web App
 
-- For my project, I have created a streamlit web app for finding out if a passenger was transported to an alternate dimensionin or not.
+- For my project, I have created a streamlit web app for classifying passenger's in a user friendly way.
 
-- This web app is multi-pages, means you can navigate to different pages through dropdown menu in the sidebar.
+- The web app is multi-pages, means you can navigate to different pages through dropdown menu in the sidebar.
 
   - First Page is home page, which contains the problem statement and information about the dataset.
  
   - Second Page is web application page, which contains the web application itself used to classify passengers.
 
-- It also contains a contribution section in the sidebar, which lets you contribute to the project by Giving Stars, Forking the Repository and Download ZIP file of the entire Project.
+- It also contains a contribution section in the sidebar.
 
-**Link to the Web App :** [Spaceship Titanic App](https://spaceship-titanic-classification.streamlit.app/)
+**Link to the Application :** [Application](https://spaceship-titanic-classification.streamlit.app/)
 
 <a href="https://spaceship-titanic-classification.streamlit.app/"><img src="https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/assets/123563634/649c907b-7c72-4bfa-9b78-584acec1cc22"/></a>
 
