@@ -58,7 +58,7 @@ def intro_page():
 
     # View Notebook Button
     with col2:
-        st.link_button(label="View Notebook", url="https://www.kaggle.com/code/themrityunjaypathak/spaceship-titanic-classification", use_container_width=True)
+        st.link_button(label="View Notebook", url="https://github.com/TheMrityunjayPathak/Supermarket-Sales-Analysis/blob/main/Supermarket%20Sales%20Analysis.ipynb", use_container_width=True)
 
     # View Repository Button
     with col3:
@@ -301,3 +301,4 @@ st.sidebar.link_button(label="Fork", url="https://github.com/TheMrityunjayPathak
 st.sidebar.link_button(label="Download", url="https://github.com/TheMrityunjayPathak/SpaceshipTitanicClassification/archive/HEAD.zip", use_container_width=True)
 
 st.sidebar.markdown("<h1 style='text-align:center;'>Thanks 👏 for Visiting!</h1>", unsafe_allow_html=True)    
+
